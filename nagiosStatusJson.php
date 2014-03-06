@@ -61,8 +61,8 @@ class NagiosJSON {
 
 }
 
-$nagiosDataFile = "../var/nagios.data";
-// nagios data file.一般 ../var/nagios.data
+$nagiosDataFile = "../var/status.dat";
+// nagios data file.一般 ../var/status.dat
 if(file_exists($nagiosDataFile) && is_readable($nagiosDataFile)){
 	$nagiosJson = new NagiosJSON($nagiosDataFile);
 }else{
